@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP-Kurs DMGK - Digital Humanities</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+        .card-title {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .card-date {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        .module-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg viewBox="0 0 200 200" width="100" height="100">
+                <circle cx="100" cy="100" r="80" fill="#ffffff"/>
+                <text x="100" y="70" font-family="Arial, sans-serif" font-size="40" fill="#8B0000" text-anchor="middle">NLP</text>
+                <g fill="none" stroke="#8B0000" stroke-width="4">
+                    <path d="M40,120 Q100,160 160,120"/>
+                    <circle cx="40" cy="120" r="5" fill="#8B0000"/>
+                    <circle cx="100" cy="140" r="5" fill="#8B0000"/>
+                    <circle cx="160" cy="120" r="5" fill="#8B0000"/>
+                </g>
+            </svg>
+        </div>
+        <h1>NLP Course for Digital Humanities and Cultural Studies</h1>
+        <p>Master Program DMGK Mainz 2024/25</p>
+        <p>Syllabus</p>
+        <nav style="margin-top: 1.5rem;">
+            <ul style="display: flex; justify-content: center; gap: 20px; padding: 0; list-style-type: none;">
+                <li>
+                    <a href="#about" style="color: #FFFFFF; text-decoration: none; font-weight: 400; text-transform: uppercase; font-size: 0.8em; letter-spacing: 1px; padding: 8px 16px; border: 1px solid rgba(255,215,0,0.3); border-radius: 2px; transition: all 0.3s ease;">About the Course</a>
+                </li>
+                <li>
+                    <a href="#schedule" style="color: #FFFFFF; text-decoration: none; font-weight: 400; text-transform: uppercase; font-size: 0.8em; letter-spacing: 1px; padding: 8px 16px; border: 1px solid rgba(255,215,0,0.3); border-radius: 2px; transition: all 0.3s ease;">Course Overview</a>
+                </li>
+                <li>
+                    <a href="#modules" style="color: #FFFFFF; text-decoration: none; font-weight: 400; text-transform: uppercase; font-size: 0.8em; letter-spacing: 1px; padding: 8px 16px; border: 1px solid rgba(255,215,0,0.3); border-radius: 2px; transition: all 0.3s ease;">Modules and Workflows</a>
+                </li>
+                <li>
+                    <a href="#literature" style="color: #FFFFFF; text-decoration: none; font-weight: 400; text-transform: uppercase; font-size: 0.8em; letter-spacing: 1px; padding: 8px 16px; border: 1px solid rgba(255,215,0,0.3); border-radius: 2px; transition: all 0.3s ease;">Literature</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <h2>Important Links</h2>
+            <ul>
+                <li><a href="https://github.com/ieg-dhr/NLP-Kurs_DMGK_Digitale-Geisteswissenschaften">GitHub Repository</a></li>
+                <li><a href="https://mattermost.gitlab.rlp.net/natural-language-processing---wise-202425/channels/town-square">Mattermost</a></li>
+                <li><a href="https://moodle.uni-mainz.de/course/view.php?id=132174">Moodle Course Room</a></li>
+                <li><a href="Glossary.html">Glossary</a></li>
+                <li><a href="https://zenodo.org/records/14550113">AI Model Research Documentation Sheet (AIRDocS)</a></li>
+                <li><a href="Anleitungen.html">Instructions for GitHub and HuggingFace</a></li>
+                <li><a href="https://www.marqo.ai/blog/getting-started-with-google-colab-a-beginners-guide">Google Colab Documentation</a></li>
+                <li><a href="https://www.deutsche-digitale-bibliothek.de/newspaper">German Newspaper Portal</a></li>
+                
+            </ul>
+        </aside>
+        <main>
+            <section id="about">
+                <h2>About the Course</h2>
+                <p>Author: Sarah Oberbichler <a href="https://orcid.org/0000-0002-1031-2759" target="_blank" rel="noopener noreferrer"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD" width="16" height="16" style="vertical-align: middle;"></a> <a href="https://www.ieg-mainz.de/---_site.site..ls_dir._nav.8_p.2769_likecms.html/">Leibniz Institute of European History (IEG)</a></p>
+                <p>This course offers an introduction to Natural Language Processing (NLP) and its application in the humanities and cultural studies. Participants work with digitized newspaper collections from the German Digital Library and examine the topic of "Natural and Environmental Disasters in Media". Both theoretical foundations and practical applications of NLP methods are taught.</p>
+                <h3>Course Content and Methodology:</h3>
+                <ul>
+                    <li><strong>Practical Application:</strong> Students learn to apply NLP tools to specific research questions. The digitized newspaper collections of the German Digital Library are used as a data basis, and various analysis methods are employed.</li>
+                    <li><strong>Thematic Focus:</strong> The course focuses on the examination of natural and environmental disasters in media. It analyzes how these events are presented and discussed in historical media reports.</li>
+                    <li><strong>Interdisciplinary Approaches:</strong> The course explores how NLP technologies can open up new perspectives on cultural, historical, and social issues. It also reflects on how these methods complement and extend traditional humanities approaches.</li>
+                </ul>
+                <h3>Learning Objectives:</h3>
+                <ul>
+                    <li>Application of relevant Python packages for NLP tasks on own research data</li>
+                    <li>Preparation and structuring of large datasets for analysis</li>
+                    <li>Use of transformer models and large language models for NLP tasks with extensive data volumes</li>
+                    <li>Critical reflection on various methods (methodology critique)</li>
+                    <li>Writing a scientific paper on the research results</li>
+                </ul>
+            </section>
+            <section id="schedule">
+                <h2>Course Schedule</h2>
+                <div class="session">
+                    <h3>Module 1: October 25, 2024 (10:00 AM to 11:30 AM)</h3>
+                    <p>Introduction to the topic, the course, and NLP</p>
+                    <p>Introduction to Colab Notebooks</p>
+                    <p>Python Crash Course 1</p>
+                </div>
+                <div class="session">
+                    <h3>Module 2: November 8, 2024 (10:00 AM to 11:30 AM)</h3>
+                    <p>Python Crash Course 2</p>
+                    <p>Introduction to NLP with SpaCy, NLTK, and SKLEARN</p>
+                </div>
+                <div class="session">
+                    <h3>Module 3: November 15, 2024 (10:00 AM to 11:30 AM)</h3>
+                    <p>The German Newspaper Portal: Introduction and API Usage<br>
+                    (Guests: Lisa Landes, Michael Büchner, and Stephanie Nitsche from the German National Library)</p>
+                </div>
+                <div class="session">
+                    <h3>Module 4: November 22, 2024 (10:00 AM to 11:30 AM)</h3>
+                    <p>Transformer Models for Semantic Search</p>
+                </div>
+                <div class="session">
+                    <h3>Module 5: December 6, 2024 (10:00 AM to 11:30 AM)</h3>
+                    <p>Large Language Models for Article Extraction and Post-OCR Correction</p>
+                </div>
+                <div class="session">
+                    <h3>Module 6: January 10, 2025 (10:00 AM to 11:30 AM)</h3>
+                    <p>Named Entity Recognition and Text Classification</p>
+                </div>
+                <div class="session">
+                    <h3>Module 7: January 24, 2025 (10:00 AM to 11:30 AM)</h3>
+                    <p>Individual Consultation Appointments</p>
+                </div>
+            </section>
+            <section id="modules">
+                <h2>Modules and Workloads</h2>
+                <div class="container mt-4">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="Images/python_logo.png" class="card-img-top" alt="Module 1">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Module 1: Introduction to the topic, the course, and NLP • Introduction to Colab Notebooks • Python Crash Course 1</h5>
+                                    <p class="card-text">Module 1 will introduce the main topic of the course, give an overview on NLP and a crash course on Python using Colab Notebooks.</p>
+                                    <a href="modules/module_1.html" class="btn btn-primary mt-auto" onclick="toggleModule('module1')">View Details</a>
+                                    <p class="card-date mt-2 text-end">October 25, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="Images/notebook.png" class="card-img-top" alt="Module 2">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Module 2: Python Crash Course 2 • Introduction to NLP with SpaCy, NLTK, and SKLEARN</h5>
+                                    <p class="card-text">In this module, we'll explore how to leverage Colab Notebooks for data access and become data detectives using basic NLP tasks.</p>
+                                    <a href="modules/module_2.html" class="btn btn-primary mt-auto" onclick="toggleModule('module2')">View Details</a>
+                                    <p class="card-date mt-2 text-end">November 8, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="Images/portal.png" class="card-img-top" alt="Module 3">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Module 3: The German Newspaper Portal: Overview, API Usage, Data Lab</h5>
+                                    <p class="card-text">This module gives background information to the the German Newspaper Portal, introduces to the API and gives an insight into the Data Lab.</p>
+                                    <a href="modules/module_3.html" class="btn btn-primary mt-auto" onclick="toggleModule('module3')">View Details</a>
+                                    <p class="card-date mt-2 text-end">November 15, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="container mt-4">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="Images/huggingface.png" class="card-img-top" alt="Module 4">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Module 4: Transformer Models for Semantic Search</h5>
+                                    <p class="card-text">In Module 4 we investigate the variety of transformer models for NLP tasks as well as the semantic search possibilites for historical newspapers.</p>
+                                    <a href="modules/module_4.html" class="btn btn-primary mt-auto" onclick="toggleModule('module1')">View Details</a>
+                                    <p class="card-date mt-2 text-end">November 22, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="Images/llama.png" class="card-img-top" alt="Module 5">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Module 5: Large Language Models for Article Extraction and Post-OCR Correction</h5>
+                                    <p class="card-text">In this module, we'll explore how Open-Access LLMs can be used for complex NLP tasks.</p>
+                                    <a href="modules/module_5.html" class="btn btn-primary mt-auto" onclick="toggleModule('module2')">View Details</a>
+                                    <p class="card-date mt-2 text-end">December 6, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="Images/NER.png" class="card-img-top" alt="Module 6">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Module 6: Named Entity Recognition and Text Classification</h5>
+                                    <p class="card-text">In this module we explore novel ways for NER (using Data Lab API's) and text classification.</p>
+                                    <a href="modules/module_6.html" class="btn btn-primary mt-auto" onclick="toggleModule('module3')">View Details</a>
+                                    <p class="card-date mt-2 text-end">January 10, 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+            <section id="literature">
+                <h2>Literature</h2>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li style="margin-bottom: 1em">
+                        Dobson, J.E. (2023). On reading and interpreting black box deep neural networks. <i>International Journal of Digital Humanities</i>, <strong>5</strong>, 431–449. 
+                        <a href="https://doi.org/10.1007/s42803-023-00075-w" target="_blank">https://doi.org/10.1007/s42803-023-00075-w</a>
+                    </li>
+                    
+                    <li style="margin-bottom: 1em">
+                        Khurana, D., Koli, A., Khatter, K. <i>et al.</i> (2023). Natural language processing: state of the art, current trends and challenges. <i>Multimedia Tools and Applications</i>, <strong>82</strong>, 3713–3744. 
+                        <a href="https://doi.org/10.1007/s11042-022-13428-4" target="_blank">https://doi.org/10.1007/s11042-022-13428-4</a>
+                    </li>
+                    
+                    <li style="margin-bottom: 1em">
+                        König, M. (19. August 2024). ChatGPT und Co. in den Geschichtswissenschaften – Grundlagen, Prompts und Praxisbeispiele. <i>Digital Humanities am DHIP</i>. Abgerufen am 2. Dezember 2024 von 
+                        <a href="https://doi.org/10.58079/126eo" target="_blank">https://doi.org/10.58079/126eo</a>
+                    </li>
+                    
+                    <li style="margin-bottom: 1em">
+                        Navigli, R., Conia, S., & Ross, B. (2023). Biases in Large Language Models: Origins, Inventory, and Discussion. <i>Journal of Data and Information Quality</i>, <strong>15</strong>(2), Article 10, 21 pages. 
+                        <a href="https://doi.org/10.1145/3597307" target="_blank">https://doi.org/10.1145/3597307</a>
+                    </li>
+                    
+                    <li style="margin-bottom: 1em">
+                        Sahoo, P., Singh, A. K., Saha, S., Jain, V., Mondal, S., & Chadha, A. (2024). A Systematic Survey of Prompt Engineering in Large Language Models: Techniques and Applications. <i>arXiv:2402.07927</i>. 
+                        <a href="https://doi.org/10.48550/arXiv.2402.07927" target="_blank">https://doi.org/10.48550/arXiv.2402.07927</a>
+                    </li>
+                </ul>
+            </section>  
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2024 NLP Course DMGK. All rights reserved.</p>
+</footer>

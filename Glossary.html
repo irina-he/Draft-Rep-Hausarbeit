@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>NLP Glossary</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #ffffff;
+            color: #1a2b3c;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #1a2b3c;
+            font-size: 36px;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .glossary-item {
+            border-bottom: 1px solid #e1e4e8;
+            padding: 20px 0;
+        }
+        .glossary-item:last-child {
+            border-bottom: none;
+        }
+        .term {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1a2b3c;
+            font-size: 1.1em;
+        }
+        .definition {
+            color: #4a5568;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+        .letter-section {
+            margin-bottom: 40px;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .letter-header {
+            font-size: 24px;
+            color: #1a2b3c;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e1e4e8;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NLP Glossary</h1>
+
+        <div class="letter-section">
+            <div class="letter-header">A</div>
+            <div class="glossary-item">
+                <div class="term">ALPAC Report</div>
+                <div class="definition">A 34-page report accompanied by twenty appendices released by the Automatic Language Processing Advisory Committee (ALPAC) in November 1966 under the title "Languages and machines: computers in translation and linguistics" to evaluate the demands of U.S. government officials and researchers regarding the translation of Russian-language documents into English (Hutchins, 1996) [9]. This report announced that research in the area of machine translation (MT), which had begun in the late 1940s, was not advancing significantly enough (Khurana et al., 2022) [3720], consequently bringing about funding cuts in the United States (Jones, 1994) [5-6]. – Entry created by Natasha Anderson – References: Hutchins, J. (1996). From the Archives… ALPAC: the (in)famous report. MT News International, 14, 9-12 https://aclanthology.org/www.mt-archive.info/90/MTNI-1996-Hutchins.pdf. Khurana, D., Koli, A., Khatter, K. & Singh, S. (2022). Natural language processing: state of the art, current trends and challenges. Multimedia Tools and Applications, 82, 3713-3744. https://doi.org/10.1007/s11042-022-13428-4. Jones, K. S. (1994). Natural Language Processing: A Historical Review. In A. Zampolli, N. Calzolari, & M. Palmer (Eds.), Current issues in computational linguistics: in honour of Don Walker (pp. 3-16). Dordrecht. https://aclanthology.org/www.mt-archive.info/Zampolli-1994-Sparck-Jones.pdf.</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">B</div>
+            <div class="glossary-item">
+                <div class="term">BERT</div>
+                <div class="definition">Bi-directional Encoder Representations from Transformers (BERT) is a pre-trained model with unlabeled text available on BookCorpus and English Wikipedia. This can be fine-tuned to capture context for various NLP tasks such as question answering, sentiment analysis, text classification, sentence embedding, interpreting ambiguity in the text etc.
+Earlier language-based models examine the text in either of one direction which is used for sentence generation by predicting the next word whereas the BERT model examines the text in both directions simultaneously for better language understanding. BERT provides contextual embedding for each word present in the text unlike context-free models (word2vec and GloVe) (Khurna 2023, https://doi.org/10.1007/s11042-022-13428-4). Entry created by Johannes Muff</div>
+            </div>
+            <div class="glossary-item">
+                <div class="term">BLEU</div>
+                <div class="definition">The BLEU (BiLingual Evaluation Understudy) score is a metric for evaluating an NLP model's performance. Each word in the output sentence is scored based on its presence in one of the reference sentences. The score is then normalized between 0 and 1 by dividing the count of matching words by the total words in the output sentence. One drawback of BLEU is that it assumes all words contribute equally to meaning (Khurana et al., 2023). - Entry created by Kristina Schmidt.</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">C</div>
+            <div class="glossary-item">
+                <div class="term">Chunking</div>
+                <div class="definition">Chunking is a process of separating phrases from unstructured text. Since simple tokens may not represent the actual meaning of the text, it is advisable to use phrases such as "North Africa" as a single word instead of 'North' and 'Africa' separate words. Chunking known as "Shadow Parsing" labels parts of sentences with syntactic correlated keywords like Noun Phrase (NP) and Verb Phrase (VP). Chunking is often evaluated using the CoNLL 2000 shared task. (Khurna 2023, https://doi.org/10.1007/s11042-022-13428-4). Entry created by Johannes Muff</div>
+            </div>
+            <div class="glossary-item">
+                <div class="term">Convolutional Neural Networks</div>
+                <div class="definition">Convolutional Neural Networks (CNNs) are originally developed for processing image data due to their strength in recognizing spatial patterns, CNNs are also used in NLP, especially for tasks like text classification or sentiment analysis, where they help identify local patterns within texts. CNNs can analyze and classify features such as word groups or phrases, making them particularly useful for text classification tasks (https://en.wikipedia.org/wiki/Convolutional_neural_network).
+Entry created by Joshua Tischlik.</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">D</div>
+            <div class="glossary-item">
+                <div class="term">Data Corpora</div>
+                <div class="definition">Collections of structured linguistic data that serve as essential resources in NLP and computational linguistics. These corpora, often comprising written texts or transcribed speech, are used to train, test, and benchmark NLP models. There are various types of corpora, each designed to meet different linguistic needs. Annotated corpora, contain added metadata such as part-of-speech tags, syntactic parse trees, or named entity labels, thus enriching plain text with meaningful linguistic markers. This type of corpus is essential for supervised machine learning tasks in NLP, as annotations provide structured data that help models learn specific linguistic features. In contrast, unannotated corpora offer raw text, useful for unsupervised approaches or for creating pre-training datasets in tasks like language modeling. Other types of corpora include parallel corpora, which are aligned text pairs in multiple languages, invaluable for training machine translation models; reference corpora, which represent general language use across various social and situational contexts; and speech corpora, which contain recorded audio paired with transcriptions for developing speech recognition models. Corpora are fundamental for creating robust NLP systems, as they provide real-world language samples that reflect the diversity and complexity of human language. Popular corpora like Penn Treebank, Europarl, and Google's Common Crawl are widely used across academia and industry, enabling advancements in tasks from sentiment analysis to machine translation​ (Khurana et al., 2022). Entry created by Agnes Wysocki.</div>
+            </div>
+            <div class="glossary-item">
+                <div class="term">Discourse Analysis</div>
+                <div class="definition">Discourse Analysis in NLP examines how individual sentences relate to each other within a larger text, aiming to identify patterns of cohesion and coherence that help form a unified message. Unlike syntax and semantics, which operate at the sentence level, discourse analysis operates at the level of multiple sentences or even paragraphs. It is integral in understanding narrative flow, logical connections, and the thematic structure of texts, making it indispensable for applications such as document summarization, question answering, and machine translation. Key components of discourse analysis include anaphora resolution, which determines what pronouns like "he" or "it" refer to, and coreference resolution, identifying all expressions in a text that refer to the same entity. These tasks help maintain coherence, as they link entities across sentences and ensure that relationships within the text are understood in context. Additionally, discourse analysis often uses discourse markers (e.g.: "however," "therefore") to understand transitions between ideas. By connecting sentences and sections of text meaningfully, discourse analysis enables NLP systems to better interpret nuanced text, facilitating tasks that require understanding the relationship between statements. In practical applications, it enables systems to generate more coherent responses in dialogue systems, create accurate summaries in summarization tools, and retain intended meaning across translated texts, enhancing the overall quality of language processing​ (Khurana et al., 2022). Entry created by Agnes Wysocki.</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">F</div>
+            <div class="glossary-item">
+                <div class="term">Fine-tuning</div>
+                <div class="definition">A process where a pre-trained machine learning model is further trained on a specific task or domain with a smaller dataset. This adapts the general capabilities of the model to specialized applications while leveraging prior knowledge from the initial training phase
+(Dobson, 2023, pp. 434–436). Entry created by Agnes Wysocki.</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">G</div>
+            <div class="glossary-item">
+                <div class="term">General Language Understanding Evaluation (GLUE) Score</div>
+                <div class="definition">A benchmarking suite for evaluating NLP models on their general language understanding capabilities across various tasks. GLUE includes nine diverse NLP tasks that test a model's ability to perform on tasks such as sentiment analysis and textual entailment. The final GLUE score is an average across tasks, allowing models to be evaluated based on their overall language comprehension (Khurana et al., 2022) [3736]. – Entry created by Irina Herrspiegel</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">H</div>
+            <div class="glossary-item">
+                <div class="term">Hidden Markov Model</div>
+                <div class="definition">The Hidden Markov Model (HMM) is a stochastic model in which a system is represented by a Markov chain (see https://en.wikipedia.org/wiki/Markov_chain) with unobserved (hidden) states. An HMM can therefore be considered the simplest special case of a dynamic Bayesian network.
+Modeling as a Markov chain means that the system randomly transitions from one state to another, with the transition probabilities depending only on the current state and not on previously occupied states. Additionally, it is assumed that the transition probabilities remain constant over time. However, in an HMM, the states themselves are not directly observable; they are hidden. Instead, each of these internal states is associated with observable output symbols that occur with certain probabilities depending on the state. The primary task is often to derive probabilistic statements about the hidden states based on the observed sequence of emissions.
+Important application areas include speech and handwriting recognition, computational linguistics and bioinformatics, spam filtering, gesture recognition in human-machine communication, physical chemistry, and psychology.
+Literature: 
+Khurana, D., Koli, A., Khatter, K. & Singh, S. (2022). Natural language processing: state of the art, current trends and challenges. Multimedia Tools and Applications, 82, 3713-3744. https://doi.org/10.1007/s11042-022-13428-4. 3734. 
+Jurafsky, D., & Martin, J. H. (2009). Speech and Language Processing. Pearson. 370. (Download https://web.stanford.edu/~jurafsky/slp3/ed3book.pdf)
+https://en.wikipedia.org/wiki/Hidden_Markov_model
+Entry created by Joshua Tischlik.</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">I</div>
+            <div class="glossary-item">
+                <div class="term">Information extraction</div>
+                <div class="definition">Information extraction is concerned with identifying phrases of interest of textual data. This can help to summarize the information relevant to a users needs e.g names, places, events, dates, times, prices makes it easier to search a text for the informaton needed and to work with it. (Khurana et al., 2023) Entry created by Birte Bruns</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">L</div>
+            <div class="glossary-item">
+                <div class="term">Long Short-Term Memory (LSTM)</div>
+                <div class="definition">A type of Recurrent Neural Network (RNN) designed to better retain essential information over longer sequences, making it suitable for applications where long-term dependencies are key, such as text and speech processing. LSTM uses gates to regulate the flow of information, selectively retaining relevant data and discarding non-essential information for improved predictive performance 
+(Khurana et al., 2022) [3722]. – Entry created by Irina Herrspiegel</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">M</div>
+            <div class="glossary-item">
+                <div class="term">Machine Translation</div>
+                <div class="definition">Machine Translation describes the process of translating phrases from one language to another. The general underlying principles of Machine Translation include statistical analyses of language data sets, artificial neural networks and Deep learning. The aim of Machine Translation is to provide a translation from language A to language B as accurate as possible (Khurana et al., 2023). - Entry created by Kristina Schmidt</div>
+            </div>
+            <div class="glossary-item">
+                <div class="term">Masked Language Modeling (MLM)</div>
+                <div class="definition">A training task used in Transformer models where certain tokens in a sequence are masked, and the model is trained to predict the masked tokens. This self-supervised learning approach helps the model understand language patterns. (Dobson 2023, 435) – Entry created by Irina Herrspiegel</div>
+            </div>
+            <div class="glossary-item">
+                <div class="term">Morphology</div>
+                <div class="definition">The branch of linguistics focused on the structure and formation of words. It explores the smallest units of meaning in language (morphemes), which include >>roots<<, >>prefixes<<, and >>suffixes<<. E.g.: the word "un-/believe/-able" (prefix: un-, root: believe, suffix: -able). Morphology is fundamental in NLP, as it aids in understanding word formation, meaning, and grammatical function within sentences. There are two main types of morphemes: free morphemes and bound morphemes. Free morphemes, like "book" or "run", can stand alone as words, while bound morphemes, such as "-ed" or "pre-", cannot exist independently and must attach to other morphemes. Morphology also distinguishes between inflectional morphemes, which modify a word's grammatical category (e.g.: "talk" > "talked"), and derivational morphemes, which change a word's meaning or part of speech (e.g.: "happy" > "happiness"). In NLP, morphological analysis is key to tasks like lemmatization, which reduces words to their base forms, and morphological segmentation, which breaks down words into morphemes. This analysis helps systems to better understand word variations and context, enhancing the accuracy of tasks such as machine translation, text analysis, and information retrieval by capturing nuanced changes in word meaning and usage​ (Khurana et al., 2022). Entry created by Agnes Wysocki.</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">N</div>
+            <div class="glossary-item">
+                <div class="term">Naive Bayes Classifiers</div>
+                <div class="definition">Naive Bayes Classifiers are probabilistic algorithms that apply Bayes' Theorem to classify data by predicting the probability of a label given certain features. In Natural Language Processing (NLP), these classifiers are commonly used in text classification tasks such as spam detection and sentiment analysis. Naive Bayes operates by assuming that the features (e.g., words in a document) are conditionally independent of each other given the class label, which simplifies calculations. Despite this "naive" assumption of independence, Naive Bayes Classifiers are effective in practice due to their simplicity, efficiency, and relatively high performance on textual data. (Khurana et al., 2022) [3734]. – Entry created by Irina Herrspiegel</div>
+            </div>
+            <div class="glossary-item">
+                <div class="term">Natural Language Processing (NLP)</div>
+                <div class="definition">A branch of Artificial Intelligence and Linguistics that enables computers to process, understand, and interact with human language. It consists of two main components: Natural Language Understanding (NLU), which focuses on comprehending human language input, and Natural Language Generation (NLG), which deals with producing human-readable text output. NLP technologies enable computers to perform tasks such as text analysis, translation, summarization, and automated response generation, making human-computer interaction more intuitive and efficient (Navigli et al., 2023) - Entry created by Sarah Oberbichler</div>
+            </div>
+            <div class="glossary-item">
+                <div class="term">Neural Networks</div>
+                <div class="definition">Neural networks (also artificial neural network or neural net, abbreviated ANN or NN) are a class of machine learning algorithms inspired by the structure of the human brain. They consist of multiple interconnected "neurons" organized in layers, enabling them to recognize complex patterns in data. Neural networks have significantly advanced NLP applications by learning multilayered features from data.
+Key Concepts:
+Neurons: Each artificial neuron receives input features, assigns weights to them, and outputs the result to the next layer. The network adjusts these weights during training to recognize specific patterns in the data.
+Layers: Neural networks typically have an input layer, hidden layers, and an output layer. The hidden layers process the data through multiple transformations, allowing the model to learn more complex features.
+Backpropagation: This is a training method in which the network's prediction error is fed back into the network to adjust the neuron weights, improving the model over time.
+Specific Architectures: RNNs, LSTMs, and CNNs are all specific types of neural networks tailored for different kinds of tasks: RNNs and LSTMs are suited to sequential data where temporal or structural order is important. CNNs, on the other hand, are well-suited to recognizing local patterns in data, such as in texts, where particular word combinations influence classification.
+Literature: 
+Khurana, D., Koli, A., Khatter, K. & Singh, S. (2022). Natural language processing: state of the art, current trends and challenges. Multimedia Tools and Applications, 82, 3713-3744. https://doi.org/10.1007/s11042-022-13428-4. 3734–5. 
+Jurafsky, D., & Martin, J. H. (2009). Speech and Language Processing. Pearson. 132. (Download https://web.stanford.edu/~jurafsky/slp3/ed3book.pdf). Entry created by Joshua Tischlik.</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">O</div>
+            <div class="glossary-item">
+                <div class="term">Object/ Method Schema</div>
+                <div class="definition">Even though hermeneutics and interpretation are part of the core activities and methods of humanists the separation of objects from methods becomes harder to justify when it comes to the digital humanities. Since methods produce objects that are then interpreted by other methods the interpretation of computational interpretations becomes a necessary part of any computational work. - created by Birte Bruns</div>
+            </div>
+            <div class="glossary-item">
+                <div class="term">Optical Character Recognition (OCR)</div>
+                <div class="definition">A software converts scanned documents, images, and image-based PDFs into editable text by analyzing and processing the visual patterns of characters. The process begins with scanning the document and converting it into a simplified black-and-white image, followed by preprocessing to clean and align the image. Text recognition then occurs through pattern or feature recognition, where the software identifies characters by comparing them to known fonts or by analyzing their structural features. The document layout is also analyzed to identify blocks of text, tables, and images, and the recognized text is stored in a digital, editable format. This technology eliminates manual data entry, making it easier to edit and repurpose content from physical documents.
+(https://www.ibm.com/think/topics/optical-character-recognition) -- created by Steffen Uhl</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">P</div>
+            <div class="glossary-item">
+                <div class="term">Part-of-speech (POS) tagging</div>
+                <div class="definition">A vital component and implementation of NLP, in which each word in a text receives a syntactic tag according to lexical categories such as nouns, verbs, and adjectives, among others, based on the context of a sentence. This procedure is also known as grammatical tagging and is often complicated by the ambiguity of terms such as the word "might", which can function as an auxiliary verb expressing permission and possibility or as a noun referring to power and authority (Chiche & Yitagesu, 2022) [1-3]. This practice, which can encompass up to 30 individual POS categories, is a customary upstream task in NLP (Zhang & Teng, 2021) [6]. POS tagging considerably contributes to contemporary NLP research, as exemplified by Ritter's project on Named Entity Recognition (NER) in tweets, published in 2011 (Khurana et al., 2022) [3723]. – Entry created by Natasha Anderson – References: Chiche, A. & Yitagesu, B. (2022) Part of speech tagging: a systematic review of deep learning and machine learning approaches. Journal of Big Data, 9(10), 1-25. https://doi.org/10.1186/s40537-022-00561-y. Khurana, D., Koli, A., Khatter, K. & Singh, S. (2022). Natural language processing: state of the art, current trends and challenges. Multimedia Tools and Applications, 82, 3713-3744. https://doi.org/10.1007/s11042-022-13428-4. Zhang, Y. & Teng, Z. Natural language processing: a machine learning perspective. Cambridge University Press. https://doi.org/10.1017/9781108332873.</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">R</div>
+            <div class="glossary-item">
+                <div class="term">Recurrent neural networks (RNNs)</div>
+                <div class="definition">RNNs are a class of artificial neural network commonly used for sequential data processing. Unlike feedforward neural networks, which process data in a single pass, RNNs process data across multiple time steps, making them well-adapted for modelling and processing text, speech, and time series.
+(Tealab, 2018) doi:10.1016/j.fcij.2018.10.003</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">S</div>
+            <div class="glossary-item">
+                <div class="term">Self-attention mechanism</div>
+                <div class="definition">A self-attention mechanism is a core component of Transformer models, enabling them to weigh the importance of different parts of an input sequence relative to each other. It calculates attention scores that determine how much focus should be given to specific tokens or elements in the sequence when processing and encoding the data. This mechanism allows Transformers to model contextual relationships between tokens effectively, irrespective of their positions in the sequence. Entry created by Joshua Tischlik – References: Dobson, J. E. (2023). On reading and interpreting black box deep neural networks. International Journal of Digital Humanities, 5, 431-449. https://doi.org/10.1007/s42803-023-00075-w.</div>
+            </div>
+            <div class="glossary-item">
+                <div class="term">Semantic Role Labeling (SRL)</div>
+                <div class="definition">A task of NLP centered on assigning semantic roles to words and phrases as arguments related to the predicate, or main verb phrase of a sentence composed of a verb as well as associated objects and modifiers (Ariyanto et al., 2024) [57918]. In comparison to other forms of Information Extraction (IE) such as Named Entity Recognition (NER) identifying proper nouns as entities or Relation Extraction (RE) dedicated to correlations between words in sentences, SRL's focus on predicate-argument structures provides a more detailed analysis of a text via both syntactic and semantic information (Ariyanto et al., 2024) [57918]. A common method of visualizing SRL results is a parse tree, in which nodes mark different arguments of a predicate, and one recent example of semantic analysis research is The Proposition Bank, also known as PropBank (Khurana et al., 2022) [3724]. – Entry created by Natasha Anderson – References: Ariyanto, A. D. P., Purwitasari, D., & Fatichah, C. (2024). A Systematic Review on Semantic Role Labeling for Information Extraction in Low-Resource Data. IEEE Access, 12, 57917-57946.  https://doi.org/10.1109/ACCESS.2024.3392370. Khurana, D., Koli, A., Khatter, K. & Singh, S. (2022). Natural language processing: state of the art, current trends and challenges. Multimedia Tools and Applications, 82, 3713-3744. https://doi.org/10.1007/s11042-022-13428-4.</div>
+            </div>
+            <div class="glossary-item">
+                <div class="term">Sentiment analysis</div>
+                <div class="definition">A process of extracting sentiments from a text that is essential to NLP (Khurana et al., 2022) [3723]. Also known as opinion mining, this analysis method can vary in complexity from sentiment classification using the categories negative, neutral, or positive to more descriptive techniques such as targeted sentiment, which investigates the text's opinion regarding a target entity (Zhang & Teng, 2021) [17]. Examples of recent projects employing sentiment analysis are Sentiment140, classifying over 1.6 million tweets as negative, neutral, or positive according to emotion conveyed in the messages (Khurana et al. 2022) [3730], as well as Stanford Sentiment Treebank (SST), evaluating the emotional content of movie reviews on the sentence level and visualizing the findings via parse trees (Socher, 2013). – Entry created by Natasha Anderson – References: Khurana, D., Koli, A., Khatter, K. & Singh, S. (2022). Natural language processing: state of the art, current trends and challenges. Multimedia Tools and Applications, 82, 3713-3744. https://doi.org/10.1007/s11042-022-13428-4. Socher, R. et al. (2013, August). Sentiment Analysis. Stanford Press Release. https://nlp.stanford.edu/sentiment/index.html. Zhang, Y. & Teng, Z. Natural language processing: a machine learning perspective. Cambridge University Press. https://doi.org/10.1017/9781108332873.</div>
+            </div>
+            <div class="glossary-item">
+                <div class="term">Sequence-to-Sequence Mapping</div>
+                <div class="definition">A sequence is a type of data whose length is not a priori known. Many NLP problems are sequential as the end of the computed text or speech is not known. Sutskever et al. proposed a general framework for sequence-to-sequence mapping where encoder and decoder networks are used to map from sequence to vector and vector to sequence respectively. (Sutskever I, Vinyals O, Le QV (2014) Sequence to sequence learning with neural networks. In Advances in Neural Information Processing Systems (https://arxiv.org/pdf/1409.3215) as well as Khurna (https://doi.org/10.1007/s11042-022-13428-4). Entry created by Johannes Muff</div>
+            </div>
+            <div class="glossary-item">
+                <div class="term">Syntax</div>
+                <div class="definition">Syntax is the part of linguistics which refers to the arrangement of words and phrases in a specific order. It contains the rules according to which a grammatical sentence or a grammatical phrase can be put together. These rules differ from language to language. A change of the sytactic structure of a sentence or phrase can result in a different meaning e.g. in the sentence "ram beats shyam in a competition" and "shyam beats ram in a competition".
+(Khurana et al., 2023) Entry created by Birte Bruns</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">T</div>
+            <div class="glossary-item">
+                <div class="term">Text Categorization</div>
+                <div class="definition">Text Categorization systems input a large flow of data e.g. official documents or market data and assign them to predefined categories or indices. This is used when it comes to email spam filters or in order to categorize trouble tickets or complaint requests. There are different kinds of filters e.g. Content filters, Header filters or Permission filters. (Khurana et al., 2022) Entry created by Birte Bruns</div>
+            </div>
+            <div class="glossary-item">
+                <div class="term">Transformers</div>
+                <div class="definition">Transformers are large multi-layer neural networks and considered a Deep learning architecture. It was first introduced in 2017 and it is used in well-known large language models such as OpenAI's GPT products or Meta's LLaMA (Dobson, 2023). - Entry created by Kristina Schmidt</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">W</div>
+            <div class="glossary-item">
+                <div class="term">Word Embedding</div>
+                <div class="definition">A method of representing words and documents in numerical form. Through them it is possible to approximate a word's meaning in a lower-dimensional space with the help of these embeddings. Word embeddings can be trained much more quickly and efficiently than traditional models like WordNet, which require manual construction. Word embeddings allow machine learning to understand and process the semantic relationships between words in a more nuanced way than traditional methods. (https://www.ibm.com/topics/word-embedding) -- Entry created by Steffen Uhl</div>
+            </div>
+        </div>
+
+        <div class="letter-section">
+            <div class="letter-header">X</div>
+            <div class="glossary-item">
+                <div class="term">XAI</div>
+                <div class="definition">Abbreviation for Explainable Artificial Intelligence, which outlines a focus on analyzing, modeling, and communicating the processes underlying AI algorithms in order to better comprehend deep learning Transformer models (Dobson, 2023) [434]. As Christian Frey elucidates in an interview with the Fraunhofer-Institut für Optronik, Systemtechnik und Bildauswertung IOSB, XAI is an essential component of further developing AI by both correcting errors and facilitating public acceptance of this technology (Frauenhofer, 2024). – Entry created by Natasha Anderson – References: Dobson, J. E. (2023). On reading and interpreting black box deep neural networks. International Journal of Digital Humanities, 5, 431-449. https://doi.org/10.1007/s42803-023-00075-w. Frauenhofer IOSB (2024). Unsere XAI-Tools bringen Licht in die Black Box. https://www.iosb.fraunhofer.de/de/geschaeftsfelder/kuenstliche-intelligenz-autonome-systeme/xai-tools-ki-engineering-interview.html.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
