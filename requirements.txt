@@ -1,0 +1,14 @@
+pysolr
+pandas
+requests
+lxml
+tqdm
+bs4
+pathlib
+#string
+nltk
+#collections
+matplotlib
+numpy
+wordcloud
+spacy
