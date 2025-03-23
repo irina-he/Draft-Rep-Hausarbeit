@@ -1,0 +1,11 @@
+**Extracted Article 1:**
+
+* **Relevant Topics:** Erdbeben
+
+**Original Text (unchanged):**
+
+**Verification:**
+* **Coherent Unit:** Yes
+* **Topic Presence:** Yes (Erdbeben)
+* **Completeness:** Yes (short report, completely exracted)
+* **Human Control Needed:** Yes, the article is too long or I might have overseen relevant articles
